@@ -1,0 +1,117 @@
+/* Premium Modern Tech Teal & Crisp Light-Gray Scheme */
+:root {
+    --bg-main: #f4f7f6; /* অত্যন্ত চমৎকার এবং আরামদায়ক লাইট গ্রে ব্যাকগ্রাউন্ড */
+    --card-bg: #ffffff; /* খাঁটি সাদা গ্লাসি কার্ড */
+    --card-border: rgba(20, 110, 120, 0.1);
+    --primary-color: #0d9488; /* প্রিমিয়াম ডার্ক টিল (Teal) কালার */
+    --primary-hover: #0f766e;
+    --text-main: #0f172a; /* চমৎকার রিচ চারকোল টেক্সট */
+    --text-muted: #475569; /* সফট গ্রে টেক্সট */
+    --navbar-bg: rgba(255, 255, 255, 0.85);
+}
+
+body {
+    background-color: var(--bg-main) !important;
+    color: var(--text-main) !important;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Premium Card Architecture */
+.glass-card, .counter-box, .card.glass-card {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--card-border) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 20px rgba(13, 148, 136, 0.05) !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.glass-card:hover, .counter-box:hover {
+    transform: translateY(-6px) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 12px 30px rgba(13, 148, 136, 0.15) !important;
+}
+
+/* Glassmorphism Navbar */
+.navbar-custom {
+    background: var(--navbar-bg) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid var(--card-border) !important;
+}
+
+.navbar-custom .navbar-brand {
+    color: var(--text-main) !important;
+}
+.navbar-custom .navbar-brand span {
+    color: var(--primary-color) !important;
+}
+
+.navbar-custom .nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 500;
+}
+
+.navbar-custom .nav-link.active, .navbar-custom .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Universal Typography Controls */
+h1, h2, h3, h4, h5, h6, .fw-bold, .navbar-brand {
+    color: var(--text-main) !important;
+}
+
+p, .text-muted, .text-white-50, .text-light, .lead {
+    color: var(--text-muted) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Premium Buttons setup */
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+.btn-primary:hover {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+.btn-outline-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+/* Social Icons Custom Look */
+.d-flex a.text-white {
+    color: var(--text-muted) !important;
+    transition: color 0.2s;
+}
+.d-flex a.text-white:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Form Inputs Fix */
+.form-control {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(13, 148, 136, 0.2) !important;
+    color: var(--text-main) !important;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 148, 136, 0.15) !important;
+}
+
+/* Footer Custom Color */
+footer {
+    background: #ffffff !important;
+    border-top: 1px solid var(--card-border) !important;
+}
